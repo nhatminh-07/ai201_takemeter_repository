@@ -55,6 +55,22 @@ I may use an LLM to pre-label batches of examples before I review them manually,
 ### Failure Analysis
 After evaluation, I will provide the model's wrong predictions to an AI tool and ask it to identify recurring error patterns, such as confusion between alerts and questions or mistakes on extreme-but-not-official record posts. I will verify any pattern myself by checking the underlying posts and confusion matrix before I include the interpretation in the final write-up.
 
+# Model results
 
+🎯 Baseline accuracy: 0.822  (evaluated on 45/45 parseable responses)
+
+Per-class metrics (baseline):
+              precision    recall  f1-score   support
+
+   questions       0.81      0.87      0.84        15
+observations       1.00      0.84      0.91        19
+     records       1.00      0.50      0.67         2
+   forecasts       0.58      0.78      0.67         9
+
+    accuracy                           0.82        45
+   macro avg       0.85      0.75      0.77        45
+weighted avg       0.85      0.82      0.83        45
+
+(After Step 3)
 
 
