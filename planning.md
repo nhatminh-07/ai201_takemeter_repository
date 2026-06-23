@@ -27,6 +27,8 @@ The most ambiguous posts will be ones that combine a real-world image or video w
 
 When that happens during annotation, I will label by the primary intent of the post rather than by every detail present. If the post is mainly asking for explanation, I will use Weather question or explanation. If it is mainly reporting an observed condition or measurement, I will use Weather observation or media or Weather record or measurement depending on whether the core content is visual or numeric. I will keep a short note of repeated borderline cases and tighten the label definitions before continuing if the same ambiguity appears often.
 
+Some hard edge cases could be seen in the Data itself, with some notes. Some do not fit in any of the categories, but for the purpose of the assignment, there are only 4 categories. The "records" are pretty low, because the 'records' are systematically undervalued compared to observations.
+
 # Data Collection Plan
 I will collect examples from r/weather using post titles, self-text, and linked media context when available. I will aim for about 75 examples per label for a total of roughly 300 annotated posts, which is enough to train and evaluate a small classifier without making the annotation burden too large.
 
